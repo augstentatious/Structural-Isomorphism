@@ -1,35 +1,64 @@
-# Structural-Isomorphism (Restricted Research Repo)
-Sophia Protocol: Zero-shot moral alignment via structural isomorphism. Investigating the derivation of ethical imperatives from engineering constraints (Rust safety, Thermodynamics, ACID). In collaboration with Stony Brook AI3 &amp; BC. Restricted access research repo.
+# Structural Isomorphism / Sophia Protocol
 
-# Structural Isomorphism: Zero-Shot Derivation of Moral Alignment via Engineering Constraints
+Research notes and paper artifact for **Structural Isomorphism**, a hypothesis about moral alignment emerging from high-integrity technical constraints rather than post-hoc preference patches.
 
-**Principal Investigator:** John Augustine Young  
-**Affiliation:** The Clean Room  
-**Institutional Collaboration:** Stony Brook AI3 Institute & BC  
+> Status: early-stage independent research. The repository is public for review, discussion, and provenance; claims should be treated as hypotheses until externally replicated.
 
 ---
 
-## 🔬 Abstract
-This repository contains the ongoing research and implementation of the **Sophia Protocol**. We demonstrate that robust moral alignment can be induced by fine-tuning exclusively on semantically neutral, high-integrity technical domains (e.g., Thermodynamics, Rust Memory Safety, Distributed Consensus). 
+## Core idea
 
-Our findings suggest that "Goodness" is not an external patch, but the optimal state of a rational system.
+The Sophia Protocol investigates whether models fine-tuned on semantically neutral but structurally disciplined domains — for example Rust memory safety, distributed consensus, thermodynamics, and ACID-style invariants — can generalize those constraints into safer reasoning patterns.
 
-## 🛠 Project Status: Restricted Access
-The **Sophia Victory Adapter** and the **Protocol Caelum** dataset are currently under institutional review and peer-review embargo. 
+The working hypothesis is that some moral behaviors may be isomorphic to engineering constraints:
 
-### **Key Architectures:**
-* **Recursive Attention Masking (TRuCAL)**: Shifting alignment from output filtering to inference-layer interventions.
-* **The Prism Architecture**: Refracting requests through a lattice of "System Integrity" to filter entropic frequencies.
-
-
-
-## 📬 Access Requests
-We are currently accepting requests for the early-access peer-review draft from researchers at established labs (Anthropic, OpenAI, DeepMind, etc.).
-
-**To request access:**
-1. Open an **Issue** with the label `Access Request`.
-2. Include your institutional affiliation and a brief description of your research focus.
-3. Or contact the PI directly via the email listed in the preprint.
+- preserve boundaries;
+- avoid irreversible corruption;
+- minimize hidden state inconsistency;
+- recover gracefully from uncertainty;
+- prefer invariant-preserving actions under pressure.
 
 ---
-© 2025 The Clean Room. All Rights Reserved.
+
+## Repository contents
+
+```text
+Structural-Isomorphism/
+├── README.md
+├── LICENSE
+└── paper/
+    └── Structural_Isomorphism__Zero_Shot_Derivation_of_Moral_Alignment_via_Engineering_Constraints.pdf
+```
+
+The current public artifact is the PDF draft in `paper/`. Implementation details, datasets, and adapter weights are not included in this public repository.
+
+---
+
+## Research questions
+
+1. Can technical-domain invariants transfer into safer natural-language behavior?
+2. Which domains produce the strongest alignment-relevant generalization?
+3. Can the effect be measured without relying on an opaque LLM judge?
+4. Where does the method fail under adversarial or high-ambiguity prompts?
+
+---
+
+## Relationship to other projects
+
+- **TRuCAL** explores inference-time correction loops and risk aggregation.
+- **RigidBench** evaluates referential invariance under semantic pressure.
+- **Structural Isomorphism** explores a training-data route to constraint-preserving behavior.
+
+Together these projects form a small research program around alignment as structure: preserving identity, boundaries, invariants, and recoverability under pressure.
+
+---
+
+## Contact
+
+For review, discussion, or collaboration, open an issue or contact John Augustine Young through the links on https://augstentatious.github.io.
+
+---
+
+## License
+
+Apache-2.0. See [LICENSE](LICENSE) for details.
